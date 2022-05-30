@@ -4,13 +4,227 @@
     box-sizing: border-box;
 }
 
+html, body {
+    font-family: "Avenir-Roman";
+    line-height: 1.5;
+}
 
-/* Navigation */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*/ Navigation /*/
+/* opened */
 .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 310px;
     background-color: #222222;
+    padding: 15px 25px;
+    z-index: 99;
+    transition: all 0.4s;
+}
+
+.sidebar .logo-cont {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.sidebar .logo-cont .logo a {
+    display: flex;
+}
+
+.sidebar .logo-cont .logo-name {
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.5s;
+}
+
+.sidebar .logo-cont .bold {
+    font-family: "Avenir-black";
+    font-weight: bolder;
+}
+
+.sidebar .logo-cont .nav-menu {
+    height: 11px;
+    min-width: 26px;
+}
+
+.sidebar .logo-cont #btn {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    cursor: pointer;
+}
+
+.nav-navigation img {
+    height: 20px;
+    min-width: 16px;
+}
+
+.nav-navigation {
+    margin-top: 70px;
+
+}
+
+.nav-following {
+    margin-top: 70px;
+}
+
+.sidebar li .tooltip {
+    display: none;
+}
+
+.sidebar li {
+    position: relative;
+}
+
+.sidebar li a {
+    height: 50px;
+    width: 250px;
+    display: flex;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.sidebar li a:hover {
+    background-color: #FF2288;
+
+}
+
+.sidebar li a .links_name {
+    color: #fff;
+    font-size: 16px;
+    transition: 0.4s;
+    margin-left: 15px;
+}
+
+.nav-following .desc {
+    font-family: "Avenir-Heavy";
+    color: #fff;
+    font-size: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-following .more {
+    font-family: "Avenir-Heavy";
+    color: #fff;
+    font-size: 12px;
+    padding: 20px;
+}
+
+.nav-following .more:hover {
+    color: #ffffffc7;
 }
 
 .nav-pp {
-    width: 44px;
-    height: 44px;
+    height: 35px;
+    min-width: 35px;
+}
+
+/* closed */
+.sidebar.close {
+    width: 100px;
+    padding: 20px;
+}
+
+.sidebar.close .logo-cont .nav-menu {
+    left: 25%;
+}
+
+.sidebar.close li .tooltip {
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 15px);
+    z-index: 3;
+    background-color: #FF2288;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: 0s;
+}
+
+.sidebar.close .nav-navigation img {
+    height: 25px;
+    min-width: 33px;
+}
+
+.sidebar.close li a {
+    width: 55px;
+    padding: 10px;
+}
+
+.sidebar.close li:hover .tooltip {
+    transition: all 0.4s ease;
+    top: 50%;
+    transform: translateY(-50%);
+    display: unset;
+}
+
+.sidebar.close .logo-cont .logo,
+.sidebar.close li a .links_name,
+.sidebar.close .nav-following .desc,
+.sidebar.close .nav-following .more {
+    display: none;
+}
+
+/*/ Section /*/
+section {
+    position: relative;
+    background: #E4E9F7;
+    min-height: 200vh;
+    top: 0;
+    left: 310px;
+    width: calc(100% - 310px);
+    transition: all 0.4s;
+    z-index: 2;
+}
+
+.sidebar.close~section {
+    left: 100px;
+    width: calc(100% - 100px);
+}
+
+.top-section {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    font-size: 16px;
+}
+
+.top-section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.topright-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topright-section li {
+    margin: 30px;
 }
