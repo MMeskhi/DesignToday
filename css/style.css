@@ -44,12 +44,20 @@ img {
 
 .sidebar .logo-cont .logo a {
     display: flex;
+    color: #fff;
+}
+
+.sidebar .logo-cont .logo a:hover {
+    color: #FF2288;
 }
 
 .sidebar .logo-cont .logo-name {
-    color: #fff;
     font-size: 24px;
     transition: all 0.5s;
+}
+
+.logo-name-small {
+    display: none;
 }
 
 .sidebar .logo-cont .bold {
@@ -60,6 +68,10 @@ img {
 .sidebar .logo-cont .nav-menu {
     height: 11px;
     min-width: 26px;
+}
+
+.sidebar .logo-cont .nav-menu:hover {
+    opacity: 80%;
 }
 
 .sidebar .logo-cont #btn {
@@ -76,7 +88,6 @@ img {
 
 .nav-navigation {
     margin-top: 70px;
-
 }
 
 .nav-following {
@@ -145,6 +156,7 @@ img {
 }
 
 .sidebar.close .logo-cont .nav-menu {
+    margin-top: 10px;
     left: 25%;
 }
 
@@ -162,6 +174,10 @@ img {
     white-space: nowrap;
     pointer-events: none;
     transition: 0s;
+}
+
+.nav-navigation.close {
+    margin-top: 100px;
 }
 
 .sidebar.close .nav-navigation img {

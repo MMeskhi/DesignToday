@@ -1,0 +1,86 @@
+@media all and (max-width: 1280px) {}
+
+@media all and (max-width: 1024px) {
+    .sidebar {
+        width: 100px;
+        padding: 20px;
+    }
+
+    .sidebar .logo-cont .nav-menu {
+        left: 25%;
+    }
+
+    .sidebar li .tooltip {
+        position: absolute;
+        top: -20px;
+        left: calc(100% + 15px);
+        z-index: 3;
+        background-color: #FF2288;
+        color: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 16px;
+        white-space: nowrap;
+        pointer-events: none;
+        transition: 0s;
+    }
+
+    .sidebar .nav-navigation img {
+        height: 25px;
+        min-width: 33px;
+    }
+
+    .sidebar li a {
+        width: 55px;
+        padding: 10px;
+    }
+
+    .sidebar li:hover .tooltip {
+        transition: all 0.4s ease;
+        top: 50%;
+        transform: translateY(-50%);
+        display: unset;
+    }
+
+    .sidebar .logo-cont .logo,
+    .sidebar .logo-cont .nav-menu,
+    .sidebar li a .links_name,
+    .sidebar .nav-following .desc,
+    .sidebar .nav-following .more {
+        display: none;
+    }
+
+    .logo-name-small {
+        display: unset;
+        font-size: 33px;
+        transition: all 0.5s;
+    }
+
+    .sidebar .logo-cont .logo-small a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        color: #fff;
+    }
+
+    .sidebar .logo-cont .logo-small a:hover {
+        color: #FF2288;
+    }
+
+    section {
+        position: relative;
+        background: #fff;
+        min-height: 200vh;
+        top: 0;
+        left: 100px;
+        width: calc(100% - 100px);
+        transition: all 0.4s;
+        z-index: 2;
+    }
+}
+
+@media all and (max-width: 768px) {}
+
+@media all and (max-width: 480px) {}
