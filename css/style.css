@@ -191,7 +191,7 @@ img {
 /*/ Section /*/
 section {
     position: relative;
-    background: #E4E9F7;
+    background: #fff;
     min-height: 200vh;
     top: 0;
     left: 310px;
@@ -205,10 +205,12 @@ section {
     width: calc(100% - 100px);
 }
 
+
+/* top Section */
 .top-section {
     width: 100%;
     height: auto;
-    padding: 30px;
+    padding: 30px 0 30px 30px;
     font-size: 16px;
 }
 
@@ -216,7 +218,46 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+}
+
+.top-section .search input {
+    height: 56px;
+    width: 400px;
+    background-color: #F8F8F8;
+    text-align: left;
+    text-indent: 20px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+
+.top-section .search input:hover {
+    box-shadow: 1px 1px 12px #0000001a;
+}
+
+.top-section .search input:focus {
+    box-shadow: 1px 1px 12px #0000001a;
+}
+
+.top-section .search input::placeholder {
+    opacity: 50%;
+}
+
+.search-relative {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    top: 28%;
+    right: 5%;
+    height: 24px;
+    width: 24px;
+}
+
+.search button {
+    border: none;
+    cursor: pointer;
 }
 
 .topright-section {
@@ -226,5 +267,69 @@ section {
 }
 
 .topright-section li {
-    margin: 30px;
+    margin-right: 30px;
+}
+
+.topright-section .user-int .go-pro {
+    color: #FF2288;
+    font-size: 14px;
+}
+
+.topright-section .user-int .go-pro:hover {
+    color: #d81f75;
+}
+
+.topright-section .user-int img {
+    height: 24px;
+    width: 24px;
+}
+
+.notf-relative {
+    position: relative;
+}
+
+.topright-section .notf-relative img:hover {
+    opacity: 50%;
+}
+
+.notf {
+    position: absolute;
+    right: 1%;
+    height: 8px;
+    width: 8px;
+    background-color: #FF2288;
+    border-radius: 50%;
+}
+
+.topright-section .user-int .profile {
+    height: 56px;
+    width: 56px;
+}
+
+.topright-section .user-int .profile:hover {
+    outline: 2px solid #FF2288;
+    outline-offset: 0px;
+    border-radius: 50px;
+}
+
+.topright-section .user-int button {
+    background-color: #FF2288;
+    color: #fff;
+    height: 56px;
+    width: 129px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+.topright-section .user-int button:hover {
+    background-color: #d81f75;
+}
+
+hr.solid {
+    border-top: 1px solid #111111;
+    opacity: 5%;
+    margin-top: 30px;
+    width: 98.30%;
 }
