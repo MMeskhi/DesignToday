@@ -115,12 +115,15 @@ img {
 
 .sidebar li a:hover {
     background-color: #FF2288;
+}
 
+.sidebar li a:focus {
+    background-color: #FF2288;
 }
 
 .sidebar li a .links_name {
     color: #fff;
-    font-size: 16px;
+    font-size: 1vw;
     transition: 0.4s;
     margin-left: 15px;
 }
@@ -170,7 +173,7 @@ img {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     padding: 6px 12px;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 1vw;
     white-space: nowrap;
     pointer-events: none;
     transition: 0s;
@@ -222,18 +225,18 @@ section {
 }
 
 
-/* top Section */
+/* Top Section */
 .top-section {
     width: 100%;
     height: auto;
     padding: 30px 0 30px 30px;
-    font-size: 16px;
 }
 
 .top-section-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .top-section .search input {
@@ -348,4 +351,141 @@ hr.solid {
     opacity: 5%;
     margin-top: 30px;
     width: 98.30%;
+}
+
+/* Middle Section */
+.middle-section {
+    width: 80%;
+    height: auto;
+    padding: 15px 30px 30px 15px;
+    margin: 0 auto;
+}
+
+.middle-section .cat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-section .cat ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-section .cat li a {
+    font-family: "Avenir-Book";
+    margin-right: 10px;
+    padding: 15px;
+    font-size: 1vw;
+    white-space: nowrap;
+}
+
+.middle-section .cat li a:hover {
+    background-color: #F2F2F2;
+    border-radius: 12px;
+}
+
+.middle-section .cat li a:focus {
+    background-color: #F2F2F2;
+    border-radius: 12px;
+}
+
+.middle-section .cat .cat-filters button {
+    font-family: "Avenir-Book";
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #222;
+    height: 50px;
+    width: 120px;
+    border-radius: 12px;
+    border: 1px solid #D8D8D8;
+    cursor: pointer;
+}
+
+.middle-section .cat .cat-filters button:hover {
+    background-color: #F2F2F2;
+}
+
+.middle-section .cat .cat-filters button:focus {
+    background-color: #F2F2F2;
+}
+
+.middle-section .cat .cat-filters button img {
+    margin-right: 15px;
+}
+
+.middle-section-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 40px;
+    margin-top: 40px;
+}
+
+.grid-relat {
+    position: relative;
+}
+
+.save-action {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    display: grid;
+    grid-row-gap: 5px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.grid-relat:hover .save-action {
+    visibility: visible;
+}
+
+.save-action img {
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.save-action img:hover {
+    background-color: #FF2288;
+}
+
+.middle-section-grid .items img {
+    height: 190px;
+    width: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px #5B5EBA1F;
+}
+
+.middle-section-grid a:hover {
+    opacity: 90%;
+}
+
+.middle-section-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-section-button button {
+    background-color: #F2F2F2;
+    color: #222;
+    height: 50px;
+    width: 280px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.middle-section-button button:hover {
+    background-color: #e7e3e3;
 }

@@ -1,9 +1,31 @@
-@media all and (max-width: 1280px) {}
+@media all and (max-width: 1280px) {
+    .sidebar {
+        width: 280px;
+        padding: 10px 15px;
+    }
+
+    .middle-section .cat .cat-filters button {
+        width: 60px;
+    }
+
+    .middle-section .cat .cat-filters button span {
+        display: none;
+    }
+
+    .middle-section .cat .cat-filters button img {
+        margin-right: 0;
+    }
+
+    .middle-section-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
 
 @media all and (max-width: 1024px) {
     .sidebar {
-        width: 100px;
-        padding: 20px;
+        width: 77px;
+        padding: 10px;
     }
 
     .sidebar .logo-cont .nav-menu {
@@ -74,10 +96,19 @@
         background: #fff;
         min-height: 200vh;
         top: 0;
-        left: 100px;
-        width: calc(100% - 100px);
+        left: 77px;
+        width: calc(100% - 77px);
         transition: all 0.4s;
         z-index: 2;
+    }
+
+    .top-section {
+        padding: 10px 0 10px 10px;
+    }
+
+    .middle-section-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 }
 
