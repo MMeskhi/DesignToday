@@ -77,7 +77,7 @@ img {
 .sidebar .logo-cont #btn {
     position: absolute;
     top: 55%;
-    right: 0;
+    right: 5%;
     cursor: pointer;
 }
 
@@ -211,7 +211,7 @@ img {
 section {
     position: relative;
     background: #fff;
-    min-height: 200vh;
+    min-height: 100vh;
     top: 0;
     left: 310px;
     width: calc(100% - 310px);
@@ -220,6 +220,22 @@ section {
 }
 
 .sidebar.close~section {
+    left: 100px;
+    width: calc(100% - 100px);
+}
+
+footer {
+    position: relative;
+    background: #fff;
+    min-height: 50vh;
+    top: 0;
+    left: 310px;
+    width: calc(100% - 310px);
+    transition: all 0.4s;
+    z-index: 2;
+}
+
+.sidebar.close~footer {
     left: 100px;
     width: calc(100% - 100px);
 }
@@ -357,7 +373,7 @@ hr.solid {
 .middle-section {
     width: 80%;
     height: auto;
-    padding: 15px 30px 30px 15px;
+    padding: 15px 30px 30px 30px;
     margin: 0 auto;
 }
 
@@ -488,4 +504,117 @@ hr.solid {
 
 .middle-section-button button:hover {
     background-color: #e7e3e3;
+}
+
+/* Bottom Section */
+.bottom-section-box {
+    height: 500px;
+    width: 100%;
+    background-color: #FAFAFA;
+}
+
+.bottom-section-box .bottom-section-cont {
+    width: 90%;
+    height: auto;
+    padding: 65px 30px 30px 30px;
+    margin: 60px auto;
+}
+
+.bottom-section-cont .bottom-section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.bottom-section-designers ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-section-designers ul li {
+    margin-right: 25px;
+    text-align: center;
+}
+
+.bottom-section-designers img {
+    height: 120px;
+    width: 120px
+}
+
+.bottom-section-designers a {}
+
+.bottom-section-designers span {
+    font-size: 12px;
+}
+
+.bottom-section-designers button {
+    background-color: #F2F2F2;
+    color: #222;
+    height: 44px;
+    width: 120px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.bottom-section-designers button:hover {
+    background-color: #e7e3e3;
+}
+
+
+/*/ Footer /*/
+.footer-cont {
+    width: 80%;
+    height: auto;
+    padding: 0 30px 30px 30px;
+    margin: 60px auto;
+    font-family: "Avenir-Heavy";
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 25px;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #222;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    background-color: #FF2288;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    color: #222;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    opacity: 60%;
+    padding-left: 8px;
 }
