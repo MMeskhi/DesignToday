@@ -173,6 +173,15 @@
     .top-section .search input {
         width: 400px;
     }
+
+    .section-table-cont {
+        justify-content: unset;
+    }
+
+    .date,
+    .quant {
+        display: none;
+    }
 }
 
 @media all and (max-width: 480px) {

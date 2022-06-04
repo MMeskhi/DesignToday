@@ -436,10 +436,12 @@ hr.solid {
 
 .middle-section .cat li a:hover {
     background-color: #F2F2F2;
+    border-radius: 12px;
 }
 
 .middle-section .cat li a:focus {
     background-color: #F2F2F2;
+    border-radius: 12px;
 }
 
 .middle-section .cat .cat-filters button {
@@ -663,6 +665,7 @@ hr.solid {
 }
 
 .footer-col h4 {
+    font-family: "Avenir-Heavy";
     font-size: 16px;
     font-weight: 600;
     color: #222;
@@ -686,6 +689,7 @@ hr.solid {
 }
 
 .footer-col ul li a {
+    font-family: "Avenir-Book";
     font-size: 16px;
     color: #222;
     display: block;
@@ -724,12 +728,15 @@ hr.solid {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    overflow-x: auto;
+    max-width: 1280px;
+    width: 100%;
 }
 
 .section-table {
     border-collapse: collapse;
     color: #AFAFAF;
-    width: 80%;
 }
 
 .section-table td, table.section-table th {
@@ -744,6 +751,7 @@ hr.solid {
 .section-table th, td {
     border-bottom: 1px solid #E7E7E7;
     border-radius: 2px;
+    text-align: left;
 }
 
 .section-table .tr-info {
