@@ -412,6 +412,13 @@ hr.solid {
     margin: 0 auto;
 }
 
+.middle-section-cont {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .middle-section .cat {
     display: flex;
     justify-content: space-between;
