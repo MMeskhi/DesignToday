@@ -662,6 +662,7 @@ hr.solid {
 .footer-row {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .footer-col {
@@ -711,7 +712,9 @@ hr.solid {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 100px 30px 0 30px;
+    padding: 40px 30px 0 30px;
+    border: 1px #1111111a;
+    border-top-style: solid;
 }
 
 .footer-bottom .footer-bottom-left a {
