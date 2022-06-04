@@ -77,7 +77,6 @@
     section {
         position: relative;
         background: #fff;
-        min-height: 200vh;
         top: 0;
         left: 77px;
         width: calc(100% - 77px);
@@ -88,7 +87,6 @@
     footer {
         position: relative;
         background: #fff;
-        min-height: 50vh;
         top: 0;
         left: 77px;
         width: calc(100% - 77px);
