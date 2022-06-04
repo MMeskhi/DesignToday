@@ -4,6 +4,16 @@
         padding: 10px 15px;
     }
 
+    .top-section-container {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        align-items: center;
+    }
+
+    .search {
+        margin-top: 20px;
+    }
+
     .middle-section {
         width: 90%;
     }
@@ -23,6 +33,13 @@
     .middle-section-grid {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
+    }
+
+    .bottom-section-designers ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        display: none;
     }
 }
 
@@ -54,7 +71,7 @@
 
     .sidebar .nav-navigation img {
         height: 25px;
-        min-width: 33px;
+        max-width: 33px;
     }
 
     .sidebar li a {
@@ -98,7 +115,7 @@
     section {
         position: relative;
         background: #fff;
-        min-height: 100vh;
+        min-height: 200vh;
         top: 0;
         left: 77px;
         width: calc(100% - 77px);
@@ -125,14 +142,50 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+        padding: 0 50px;
+    }
 }
 
 @media all and (max-width: 768px) {
+    .middle-section-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .middle-section-cont {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
     .bottom-section-designers ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+
+    .middle-section .cat ul {
+        display: none;
+    }
+
+    .middle-section .cat .cat-categories button {
+        display: unset;
+    }
 }
 
-@media all and (max-width: 480px) {}
+@media all and (max-width: 480px) {
+    .bottom-section-designers ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+}
