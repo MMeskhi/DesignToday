@@ -74,17 +74,7 @@
         color: #FF2288;
     }
 
-    section {
-        position: relative;
-        background: #fff;
-        top: 0;
-        left: 77px;
-        width: calc(100% - 77px);
-        transition: all 0.4s;
-        z-index: 2;
-    }
-
-    footer {
+    main {
         position: relative;
         background: #fff;
         top: 0;
@@ -188,7 +178,16 @@
         display: none;
     }
 
+    .bottom-section-cont .bottom-section-head {
+        flex-direction: column;
+    }
+
     .footer-col {
         width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        padding: 30px 0 30px;
     }
 }

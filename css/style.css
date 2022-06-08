@@ -30,10 +30,17 @@ img {
     height: 100%;
     max-width: 319px;
     width: 100%;
+    overflow-y: scroll;
     background-color: #222222;
     padding: 15px 25px;
     z-index: 99;
     transition: all 0.4s;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .sidebar .logo-cont {
@@ -127,7 +134,7 @@ img {
 
 .sidebar li a .links_name {
     color: #fff;
-    font-size: 1vw;
+    font-size: 16px;
     transition: 0.4s;
     margin-left: 15px;
     white-space: nowrap;
@@ -179,7 +186,7 @@ img {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     padding: 6px 12px;
     border-radius: 4px;
-    font-size: 1vw;
+    font-size: 16px;
     white-space: nowrap;
     pointer-events: none;
     transition: 0s;
@@ -222,7 +229,7 @@ img {
 }
 
 /*/ Section /*/
-section {
+main {
     position: relative;
     background: #fff;
     top: 0;
@@ -232,26 +239,10 @@ section {
     z-index: 2;
 }
 
-.sidebar.close~section {
+.sidebar.close~main {
     left: 100px;
     width: calc(100% - 100px);
 }
-
-footer {
-    position: relative;
-    background: #fff;
-    top: 0;
-    left: 310px;
-    width: calc(100% - 310px);
-    transition: all 0.4s;
-    z-index: 2;
-}
-
-.sidebar.close~footer {
-    left: 100px;
-    width: calc(100% - 100px);
-}
-
 
 /* Top Section */
 .top-section {
@@ -409,7 +400,6 @@ hr.solid {
 .middle-section {
     width: 80%;
     height: auto;
-    padding: 15px 30px 30px 30px;
     margin: 0 auto;
 }
 
@@ -436,7 +426,7 @@ hr.solid {
     font-family: "Avenir-Book";
     margin-right: 10px;
     padding: 15px;
-    font-size: 1vw;
+    font-size: 16px;
     white-space: nowrap;
 }
 
@@ -452,7 +442,7 @@ hr.solid {
 
 .middle-section .cat .cat-filters button {
     font-family: "Avenir-Book";
-    font-size: 1vw;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -576,16 +566,15 @@ hr.solid {
 
 /* Bottom Section */
 .bottom-section-box {
-    height: 500px;
+    height: auto;
     width: 100%;
     background-color: #FAFAFA;
 }
 
 .bottom-section-box .bottom-section-cont {
     width: 90%;
-    height: auto;
     padding: 65px 30px 30px 30px;
-    margin: 60px auto;
+    margin: 60px auto 100px;
 }
 
 .bottom-section-cont .bottom-section-head {
@@ -656,8 +645,7 @@ hr.solid {
 .footer-cont {
     width: 80%;
     height: auto;
-    padding: 30px 30px 0 30px;
-    margin: 40px auto;
+    margin: 0 auto;
 }
 
 .footer-row {
@@ -713,7 +701,7 @@ hr.solid {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 40px 30px 0 30px;
+    padding: 30px 30px 20px 30px;
     border: 1px #1111111a;
     border-top-style: solid;
 }
@@ -737,7 +725,7 @@ hr.solid {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     overflow-x: auto;
     max-width: 1280px;
     width: 100%;
