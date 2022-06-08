@@ -1,11 +1,16 @@
 @media all and (max-width: 1500px) {
-    .bottom-section-designers ul .second-row {
+    /* .bottom-section-designers ul .second-row {
         display: none;
+    } */
+
+    .bottom-section-designers ul {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media all and (max-width: 1280px) {
-
     .sidebar {
         width: 77px;
         padding: 10px;
@@ -118,7 +123,11 @@
 
 @media all and (max-width: 1024px) {
     .top-section {
-        padding: 10px 0 10px 10px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .topright-section {
+        padding-left: 20px;
     }
 
     .middle-section-grid {
@@ -134,6 +143,14 @@
 }
 
 @media all and (max-width: 768px) {
+    .topright-section .user-int .go-pro {
+        display: none;
+    }
+
+    .topright-section .user-int button {
+        display: none;
+    }
+
     .middle-section-grid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
@@ -147,8 +164,12 @@
         display: unset;
     }
 
-    .bottom-section-designers ul .first-row {
+    /* .bottom-section-designers ul .first-row {
         display: none;
+    } */
+
+    .bottom-section-designers ul {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .top-section .search input {
@@ -170,12 +191,16 @@
         width: 200px;
     }
 
-    .topright-section .user-int .go-pro {
-        display: none;
+    .bottom-section-designers ul {
+        grid-template-columns: repeat(1, 1fr);
     }
 
-    .topright-section .user-int button {
-        display: none;
+    .bottom-section-designers ul {
+        gap: 40px;
+    }
+
+    .sajon {
+        line-height: 0px;
     }
 
     .bottom-section-cont .bottom-section-head {

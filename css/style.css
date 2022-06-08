@@ -572,8 +572,8 @@ hr.solid {
 }
 
 .bottom-section-box .bottom-section-cont {
-    width: 90%;
-    padding: 65px 30px 30px 30px;
+    width: 80%;
+    padding: 65px 0 30px 0;
     margin: 60px auto 100px;
 }
 
@@ -584,11 +584,15 @@ hr.solid {
     margin-bottom: 55px;
 }
 
+.bottom-section-cont .bottom-section-head a {
+    opacity: 30%;
+}
+
 .bottom-section-designers ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 25px;
+    gap: 20px 10px;
 }
 
 .bottom-section-designers ul li {
