@@ -20,7 +20,7 @@
         left: 25%;
     }
 
-    .sidebar li .tooltip {
+    /* .sidebar li .tooltip {
         position: absolute;
         top: -20px;
         left: calc(100% + 15px);
@@ -34,7 +34,7 @@
         white-space: nowrap;
         pointer-events: none;
         transition: 0s;
-    }
+    } */
 
     .sidebar .nav-navigation img {
         height: 25px;
@@ -46,12 +46,12 @@
         padding: 10px;
     }
 
-    .sidebar li:hover .tooltip {
+    /* .sidebar li:hover .tooltip {
         transition: all 0.4s ease;
         top: 50%;
         transform: translateY(-50%);
         display: unset;
-    }
+    } */
 
     .sidebar .logo-cont .logo,
     .sidebar .logo-cont .nav-menu,

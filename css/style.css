@@ -176,7 +176,7 @@ img {
     left: 25%;
 }
 
-.sidebar.close li .tooltip {
+/* .sidebar.close li .tooltip {
     position: absolute;
     top: -20px;
     left: calc(100% + 15px);
@@ -190,7 +190,14 @@ img {
     white-space: nowrap;
     pointer-events: none;
     transition: 0s;
-}
+} */
+
+/* .sidebar.close li:hover .tooltip {
+    transition: all 0.4s ease;
+    top: 50%;
+    transform: translateY(-50%);
+    display: unset;
+} */
 
 .nav-navigation.close {
     margin-top: 100px;
@@ -211,15 +218,10 @@ img {
 .sidebar.close li a {
     max-width: 55px;
     width: 100%;
-    padding: 10px;
+    padding: 11px;
 }
 
-.sidebar.close li:hover .tooltip {
-    transition: all 0.4s ease;
-    top: 50%;
-    transform: translateY(-50%);
-    display: unset;
-}
+
 
 .sidebar.close .logo-cont .logo,
 .sidebar.close li a .links_name,
