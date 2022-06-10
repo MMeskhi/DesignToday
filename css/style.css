@@ -80,7 +80,7 @@ img {
 }
 
 .sidebar .logo-cont .nav-menu:hover {
-    opacity: 80%;
+    filter: invert(50%) sepia(100%) hue-rotate(290deg) saturate(500%);
 }
 
 .sidebar .logo-cont #btn {
@@ -617,8 +617,8 @@ hr.solid {
     margin: 0 auto;
 }
 
-.sajon {
-    line-height: 50px;
+.sajon a h3 {
+    line-height: 47px;
 }
 
 .bottom-section-designers span {
