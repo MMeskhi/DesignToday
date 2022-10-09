@@ -1,18 +1,18 @@
-### Name
+#### Name
 
 - DesignToday
 
-### Description
+#### Description
 
 - Fully responsive
 - Website for web and graphic designers
 
-### Links
-
-- https://mmeskhi.github.io/DesignToday
-
-### Built with
+#### Built with
 
 - HTML5
 - CSS
 - JavaScript
+
+#### Links
+
+- https://mmeskhi.github.io/DesignToday
